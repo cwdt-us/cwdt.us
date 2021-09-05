@@ -1,0 +1,39 @@
+/* Import fonts. Both licensed under the Open Font License */
+/* Wei Huang's Work Sans */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* Titus Kaphar and Reginald Dwayne Betts inspired typeface Redaction */
+@import url("redaction.css");
+
+/* Site-wide styling */
+body {
+	font-family: "Work Sans", sans-serif;
+	overflow: hidden;
+}
+
+/* CWDT in Redaction */
+#cwdt {
+	font-family: "Redaction", serif;
+	font-style: italic;
+	font-size: 3vw;
+}
+
+#root {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+
+/* Work link */
+#work-link {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+/* Center an element on page */
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
