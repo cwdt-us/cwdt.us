@@ -26,11 +26,9 @@ function mouseDistanceFromElement(mouseEvent, element){
 	return Math.floor(hypot) / maxHypot;
 }
 
-// 10 20 35 50 70 100 R
-
 document.addEventListener("mousemove", function(e) {
 	var element = document.getElementById("cwdt")
-	var distance = mouseDistanceFromElement(e, document.getElementById("latest-work-link"))
+	var distance = mouseDistanceFromElement(e, document.getElementById("cwdt"))
 	if (distance == 0) {
 		element.style.fontFamily = "Redaction100";
 	} else if (distance < 0.04) {
