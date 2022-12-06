@@ -27,8 +27,9 @@ function mouseDistanceFromElement(mouseEvent, element){
 }
 
 document.addEventListener("mousemove", function(e) {
-	var element = document.getElementById("cwdt")
-	var distance = mouseDistanceFromElement(e, document.getElementById("cwdt"))
+	let element = document.getElementsByTagName("h1")[0]
+	let span = document.getElementsByTagName("a")[0]
+	let distance = mouseDistanceFromElement(e, span)
 	if (distance == 0) {
 		element.style.fontFamily = "Redaction100";
 	} else if (distance < 0.04) {

@@ -1,3 +1,4 @@
+/* Redaction */
 @font-face {
   font-family: Redaction;
   src: url(../fonts/Redaction-Regular.woff2);
@@ -129,4 +130,17 @@
   font-family: Redaction10;
   src: url(../fonts/Redaction_10-Bold.woff2);
   font-weight: bold;
+}
+
+/* Frament Mono */
+@font-face {
+  font-family: FragmentMono;
+  src: url(../fonts/FragmentMono-Regular.woff2);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FragmentMono;
+  src: url(../fonts/FragmentMono-Italic.woff2);
+  font-style: italic;
 }

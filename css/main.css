@@ -1,0 +1,59 @@
+/* Import fonts. Both licensed under the Open Font License
+ *
+ * Titus Kaphar and Reginald Dwayne Betts inspired typeface "Redaction" 
+ * Wei Huang's monospaced version of Helvetica "Fragment Mono"
+ */
+@import url("fonts.css");
+
+/* Site-wide styling */
+body {
+	font-family: FragmentMono, 'Courier New', Courier, monospace;
+	overflow: hidden;
+}
+
+#root {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+/* Center an element on page */
+.center {
+	position: absolute;
+	text-align: center;
+	top: calc(50% - 2em);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* CWDT in Redaction */
+h1 {
+	font-family: "Redaction", serif;
+	font-style: italic;
+	font-size: 2vw;
+	margin: 0;
+	cursor: default;
+}
+
+/* Work link */
+a {
+	position: absolute;
+	margin-top: 0.75em;
+	padding: 0.25em 0.5em;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: black;
+	font-size: 1.35vw;
+	text-decoration: none;
+	color: white;
+}
+
+@media only screen and (max-width: 800px) {
+	h1 {
+		font-size: 6vw !important;
+	}
+
+	a {
+		font-size: 4vw !important;
+	}
+}
