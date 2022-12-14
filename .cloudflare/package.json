@@ -1,0 +1,44 @@
+{
+  "name": "cwdt-cloudflare",
+  "version": "1.0.0",
+  "description": "Handle cloudflare redirects and workers",
+  "main": "main.js",
+  "scripts": {
+		"build": "node main.js"
+  },
+  "author": "William W. Marx <m94@marx.sh>",
+  "license": "Apache 2.0",
+	"config": {
+		"notion": {
+			"baseURL": "notion.cwdt.us",
+			"title": "CWDT",
+			"description": "Change The World Or Die Trying™",
+			"googleFont": "",
+			"customScript": "",
+			"redirects": [
+				{
+					"path": "",
+					"target": "https://cwdt.notion.site/CWDT-7cf96b3bc1ef44c3bdafdf986d53ab51"
+				},
+				{
+					"path": "blog",
+					"target": "https://cwdt.notion.site/Blog-59bca085d7c44339b27326fedb97dc3c"
+				},
+				{
+					"path": "projects",
+					"target": "https://cwdt.notion.site/Projects-b0187fbaa2b947cba139016ece80cd7f"
+				}
+			]
+		},
+		"redirects": [
+			{
+				"url": "cwdt.us/gpt2-bias/seed-phrases",
+				"target": "https://github.com/cwdt-us/gpt2-bias/blob/main/data/seed_phrases.txt"
+			},
+			{
+				"url": "cwdt.us/gpt2-agnostic",
+				"target": "https://colab.research.google.com/drive/1bmlRca3lkD5Hb8pPffHK4kuogwyXKnhv?usp=sharing"
+			}
+		]
+	}
+}
